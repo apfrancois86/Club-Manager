@@ -29,4 +29,9 @@ export class TeamService {
                                 position: localUpdatedPlayer.position, college: localUpdatedPlayer.college});
   }
 
+  deletePlayer(localPlayerToDelete){
+  var playerEntryInFirebase = this.getPlayerById(localPlayerToDelete.$key);
+  playerEntryInFirebase.remove();
+}
+
 }
