@@ -1,0 +1,10 @@
+label {
+  margin-top: 10px;
+}
+
+button {
+  padding: 25px;
+  margin: 15px 20px;
+  background-color: rgb(28, 106, 183);
+  color: rgb(251, 191, 22);
+}

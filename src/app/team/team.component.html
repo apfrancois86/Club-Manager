@@ -1,8 +1,8 @@
 <h2 *ngIf="currentRoute === '/team'">2017 Roster</h2>
 <h2 *ngIf="currentRoute === '/admin'">Edit Current Roster</h2>
 
-<label for="">Find Players by Position</label>
-<select (change)="onChange($event.target.value)">
+<label *ngIf="currentRoute === '/team'">Find Players by Position</label>
+<select *ngIf="currentRoute === '/team'" (change)="onChange($event.target.value)">
   <option value="all" selected="selected">All</option>
   <option value="Guard">G</option>
   <option value="Forward">F</option>
@@ -11,7 +11,7 @@
 
 <div *ngFor="let thisPlayer of player | async | position:positionFilter" class="panel panel-default">
   <div class="panel-body">
-    <h3  (click)="goToDetailPage(thisPlayer)"><em>{{thisPlayer.name}}</em>- {{thisPlayer.position}}</h3>
+    <h3  (click)="goToDetailPage(thisPlayer)"><em>{{thisPlayer.name}}</em></h3>
 
     <div *ngIf="currentRoute === '/admin'">
       <app-edit-player [selectedPlayer]="thisPlayer"></app-edit-player>

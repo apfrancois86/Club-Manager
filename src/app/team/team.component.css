@@ -1,0 +1,9 @@
+.panel {
+  width: 50%;
+  box-shadow: 2px 2px 2px gray;
+}
+h3 {
+  text-align: center;
+  cursor: pointer;
+  color: rgb(28, 106, 183);
+}
