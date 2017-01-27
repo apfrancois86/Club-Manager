@@ -8,25 +8,25 @@ import { Player } from './player.model';
 })
 export class PositionPipe implements PipeTransform {
 
-  transform(input: Player[], position: string){
-  var output: Player[] = [];
-  if(position === "guard") {
+  transform(input: any[], thisPosition: string){
+  var output: any[] = [];
+  if(thisPosition === "Guard") {
     for (var i = 0; i < input.length; i++) {
-      if (input[i].position === guard) {
+      if (input[i].position === "Guard") {
         output.push(input[i]);
       }
     }
     return output;
-  } else if (position === "forward") {
+  } else if (thisPosition === "Forward") {
     for (var i = 0; i < input.length; i++) {
-      if (input[i].position === forward) {
+      if (input[i].position === "Forward") {
         output.push(input[i]);
       }
     }
     return output;
-  } else if (position === "center") {
+  } else if (thisPosition === "Center") {
     for (var i = 0; i < input.length; i++) {
-      if (input[i].position === center) {
+      if (input[i].position === "Center") {
         output.push(input[i]);
       }
     }

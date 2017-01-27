@@ -1,6 +1,14 @@
 <h2>2017 Roster</h2>
 
-<div *ngFor="let thisPlayer of player | async" class="panel panel-default">
+<label for="">Sort Player by Position</label>
+<select (change)="onChange($event.target.value)">
+  <option value="all" selected="selected">All</option>
+  <option value="Guard">G</option>
+  <option value="Forward">F</option>
+  <option value="Center">C</option>
+</select>
+
+<div *ngFor="let thisPlayer of player | async | position:positionFilter" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(thisPlayer)"><em>{{thisPlayer.name}}</em>- {{thisPlayer.position}}</h3>
     <!-- <div *ngIf="currentRoute === '/admin'">

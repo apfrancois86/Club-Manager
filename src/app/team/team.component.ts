@@ -14,6 +14,8 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class TeamComponent implements OnInit {
   player: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  positionFilter: string = "all";
+
 
   constructor(private router: Router, private teamService: TeamService){}
 
@@ -25,6 +27,8 @@ export class TeamComponent implements OnInit {
      this.router.navigate(['team', clickedPlayer.$key]);
    };
 
-   
+   onChange(position) {
+     this.positionFilter = position;
+   }
 
 }
