@@ -1,3 +1,12 @@
-<p>
-  team works!
-</p>
+<h2>2017 Roster</h2>
+
+<div *ngFor="let thisPlayer of player | async" class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(thisPlayer)"><em>{{thisPlayer.name}}</em>- {{thisPlayer.position}}</h3>
+    <!-- <div *ngIf="currentRoute === '/admin'">
+      {{album.description}}
+      <hr>
+      <app-edit-album [selectedAlbum]="album"></app-edit-album>
+    </div> -->
+  </div>
+</div>
