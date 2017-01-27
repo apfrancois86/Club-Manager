@@ -2,13 +2,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
 import { AppComponent } from './app.component';
 import { TeamComponent } from './team/team.component';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
 import { AboutComponent } from './about/about.component';
+import { routing } from './app.routing';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { AdminComponent } from './admin/admin.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { WelcomeComponent } from './welcome/welcome.component';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -17,12 +27,15 @@ import { AdminComponent } from './admin/admin.component';
     PlayerDetailComponent,
     AboutComponent,
     EditPlayerComponent,
-    AdminComponent
+    AdminComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
