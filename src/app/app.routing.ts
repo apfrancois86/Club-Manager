@@ -11,6 +11,22 @@ const appRoutes: Routes = [
   {
     path: '',
     component: WelcomeComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: 'team',
+    component: TeamComponent
+  },
+  {
+    path: 'players/:id',
+    component: PlayerDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 
 ];
