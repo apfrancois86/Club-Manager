@@ -21,7 +21,7 @@ const appRoutes: Routes = [
     component: TeamComponent
   },
   {
-    path: 'players/:id',
+    path: 'team/:id',
     component: PlayerDetailComponent
   },
   {
