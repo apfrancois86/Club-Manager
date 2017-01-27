@@ -4,6 +4,7 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 ## By Alex Francois
 
+
 # User Stories
 * A user can visit a page to see a list of all team members.
 * A user can click a team or club member's entry in the list to visit their profile page, which includes more details about them.
@@ -13,6 +14,7 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 * An administrator can add new users to the club. (User authentication is not required).
 * An administrator can edit user profiles
 * An administrator can delete a user, in case they leave the team.
+
 
 # Setup Instructions
 
@@ -63,3 +65,13 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 ### Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Technologies Used
+
+_Angular 2, TypeScript, CSS, HTML, Git_
+
+
+### License
+
+Copyright (c) 2017 **_Alex Francois_**
