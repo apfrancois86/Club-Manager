@@ -12,7 +12,8 @@
 <input [(ngModel)]="selectedPlayer.position">
 
 <label>New Player College:</label>
-<input [(ngModel)]="selectedPlayer.college">
+<input [(ngModel)]="selectedPlayer.college"><br>
 
 <button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
+<button (click)="beginDeletingPlayer(selectedPlayer)">Delete</button>
 <hr>
