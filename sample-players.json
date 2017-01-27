@@ -1,0 +1,32 @@
+{ "players": [{
+  "name": "Stephen Curry",
+  "image": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201939.png",
+  "position": "Guard",
+  "college": "Davidson",
+  "id": "1"
+  }, {
+  "name": "Klay Thompson",
+  "image": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202691.png",
+  "position": "Guard",
+  "college": "Washington State",
+  "id": "2"
+  }, {
+  "name": "Andre Iguodala",
+  "image": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/2738.png",
+  "position": "Forward",
+  "college": "Arizona",
+  "id": "3"
+  }, {
+  "name": "Kevin Durant",
+  "image": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201142.png",
+  "position": "Forward",
+  "college": "Texas",
+  "id": "4"
+  }, {
+  "name": "Draymond Green",
+  "image": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203110.png",
+  "position": "Center",
+  "college": "Michigan State",
+  "id": "5"
+  }]
+}
