@@ -15,7 +15,7 @@ export class EditPlayerComponent implements OnInit {
   ngOnInit() {
   }
 
-  beginUpdatingAlbum(playerToUpdate){
+  beginUpdatingPlayer(playerToUpdate){
     this.teamService.updatePlayer(playerToUpdate);
   }
 

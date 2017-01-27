@@ -1,3 +1,18 @@
-<p>
-  edit-player works!
-</p>
+<h4>Edit Player</h4>
+
+<label>New Player Name:</label>
+<input [(ngModel)]="selectedPlayer.name">
+<br>
+
+<label>New Player image (enter URL here):</label>
+<input [(ngModel)]="selectedPlayer.image">
+<br>
+
+<label>New Player Position:</label>
+<input [(ngModel)]="selectedPlayer.position">
+
+<label>New Player College:</label>
+<input [(ngModel)]="selectedPlayer.college">
+
+<button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
+<hr>
