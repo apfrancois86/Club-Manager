@@ -1,3 +1,33 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Player to Team</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Player Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Player Image (enter URL here):</label>
+        <br>
+        <input #newImage>
+      </div>
+
+      <div>
+        <label>Player Position:</label>
+        <br>
+        <input #newPosition>
+      </div>
+
+      <div>
+        <label>College Player Attended:</label>
+        <br>
+        <input #newCollege>
+      </div><br>
+      <button (click)="submitForm(newName.value, newImage.value, newPosition.value, newCollege.value); newName.value=''; newImage.value=''; newPosition.value=''; newCollege.value='' ">Add Player</button>
+    </div>
+  </div>
+</div>
